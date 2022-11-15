@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo-pizzaria.png">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <title>Pizza</title>
+</head>
+
+<body class="row w-auto pe-5 ps-5 h-auto">
+    <div class="col-xxl-6">
+
+
+        <div class="alert alert-secondary d-flex flex-column align-items-center justify-content-center" role="alert">
+
+            <button type="button"
+                class="btn d-none d-md-block d-lg-block d-xl-block align-self-end btn-primary">Acompanhe Seu
+                Pedido!</button>
+
+            <img src="../img/logo-pizzaria.png" class="img-fluid" alt="Logo Pizzaria" width="200">
+            <div class=" border-secondary border-top p-3 w-75 mt-3">
+                <p class="text-center">Utilize as opções disponíveis para selecionar seus produtos e realizar seu
+                    pedido.</p>
+            </div>
+
+            <button type="button" class="btn d-md-none d-lg-none d-xl-none btn-primary mb-3">Acompanhe
+                Seu
+                Pedido!</button>
+
+
+        </div>
+    </div>
+
+    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3">
+        <span class="input-group-text fw-bold col-12" id="basic-addon1 ">1 - Escolha os Produtos!
+        </span>
+
+        <div class="col-xl-6">
+            <select class="form-select " aria-label="Default select example">
+                <option selected>---</option>
+                <option value="4-Queijos"></option>
+                <option value="">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3">
+        <span class="input-group-text fw-bold col-12" id="basic-addon1 ">2 - Produtos do seu pedido!
+        </span>
+    </div>
+
+    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3 ">
+        <span class="input-group-text fw-bold col-12 position-relative top-0" id="basic-addon1 ">3 - Informações
+            Adicionais
+        </span>
+
+
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-12  position-relative">
+                <label for="validationTooltip01" class="form-label">* Nome Completo:</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Digite seu nome..."
+                    required>
+                <div class="valid-tooltip">
+                    Tudo Certo
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12  position-relative">
+                <label for="validationTooltip02" class="form-label">* Email: </label>
+                <input type="email" class="form-control" id="validationTooltip02" placeholder="Digite seu e-mail..."
+                    required>
+                <div class="valid-tooltip">
+                    Tudo Certo!
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12  position-relative">
+                <label for="validationTooltip02" class="form-label">* Telefone: </label>
+                <input type="text" class="form-control" id="validationTooltip03" placeholder="Digite seu telefone..."
+                    required>
+                <div class="valid-tooltip">
+                    Tudo Certo!
+                </div>
+            </div>
+
+            <div class="row g-2 gx-4 position-relative">
+                <div class="col-md-2 col-xs-12 position-relative">
+                    <label for="validationTooltip03" class="form-label">* CEP: </label>
+                    <input type="text" class="form-control" id="validationTooltip04" placeholder="00000-000" required>
+                    <div class="invalid-tooltip">
+                        Por favor, informar um CEP válida.
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 position-relative">
+                    <label for="validationTooltip04" class="form-label">* Endereço: </label>
+                    <input type="text" class="form-control" id="validationTooltip05" placeholder="..." required>
+                    <div class="invalid-tooltip">
+                        Favor, digitar um endereço válido.
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-12 position-relative">
+                    <label for="validationTooltip05" class="form-label">* N°:</label>
+                    <input type="text" class="form-control" id="validationTooltip06" placeholder="..." required>
+                    <div class="invalid-tooltip">
+                        Favor, Digitar um número.
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 position-relative">
+                    <label for="validationTooltip05" class="form-label">* Complemento: </label>
+                    <input type="text" class="form-control" id="validationTooltip07" placeholder="..." required>
+                    <div class="invalid-tooltip">
+                        Favor, Digitar um Complemento.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row g-2 gx-4 position-relative">
+                <div class="col-md-4 col-xs-12 position-relative">
+                    <label for="validationTooltip03" class="form-label">* Bairro: </label>
+                    <input type="text" class="form-control" id="validationTooltip08" placeholder="..." required>
+                    <div class="invalid-tooltip">
+                        Favor, digitar um bairro válido.
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 position-relative">
+                    <label for="validationTooltip05" class="form-label">* Cidade:</label>
+                    <input type="text" class="form-control" id="validationTooltip09" placeholder="..." required>
+                    <div class="invalid-tooltip">
+                        Favor, Digitar uma cidade válida.
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 position-relative">
+                    <label for="validationTooltip04" class="form-label">* Estado: </label>
+                    <select class="form-select" id="validationTooltip10" required>
+                        <option selected disabled value="">...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Favor, selecionar um estado válido.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="validationTextarea" class="form-label">Observações: </label>
+                    <textarea class="form-control" id="validationTextarea"
+                        placeholder="Ex: por favor, colocaer poucas azeitonas na pizza..." required></textarea>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <button class="btn btn-success w-100" type="submit">Enviar Pedido</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+    <div
+        class="input-group mb-3 p-3 col-12 border border-2 rounded-3 d-flex align-items-center justify-content-center ">
+
+        <span class="input-group-text fw-bold col-12" id="basic-addon1 ">4 - Finalização
+        </span>
+
+
+        <div class="alert alert-success rounded-3 p-3 mt-3 mb-0 w-100 d-flex justify-content-center flex-column align-items-center text-success"
+            role="alert">
+            Código do pedido:
+
+            <span class="text-success display-1">
+                Q5PaXtkK
+            </span>
+
+            <div class=" border-secondary border-top border-success p-3 w-75 mt-3">
+                <p class="text-center text-success"> Seu pedido foi enviado com sucesso.</p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
