@@ -20,7 +20,7 @@
 </head>
 
 <body class="row w-auto pe-5 ps-5 h-auto">
-    <div class="col-xxl-6">
+    <div class="col-12">
 
 
         <div class="alert alert-secondary d-flex flex-column align-items-center justify-content-center" role="alert">
@@ -29,7 +29,7 @@
                 class="btn d-none d-md-block d-lg-block d-xl-block align-self-end btn-primary">Acompanhe Seu
                 Pedido!</button>
 
-            <img src="../img/logo-pizzaria.png" class="img-fluid" alt="Logo Pizzaria" width="200">
+            <img src="./img/logo-pizzaria.png" class="img-fluid" alt="Logo Pizzaria" width="200">
             <div class=" border-secondary border-top p-3 w-75 mt-3">
                 <p class="text-center">Utilize as opções disponíveis para selecionar seus produtos e realizar seu
                     pedido.</p>
@@ -43,23 +43,109 @@
         </div>
     </div>
 
-    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3">
+    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3 align-items-center justify-content-start">
         <span class="input-group-text fw-bold col-12" id="basic-addon1 ">1 - Escolha os Produtos!
         </span>
 
-        <div class="col-xl-6">
-            <select class="form-select " aria-label="Default select example">
+        <div class="p-2 col-xl-6 col-md-6 col-12 align-items-center">
+            <span class="mt-2"> * Selecione um produto: </span>
+            <select class="mt-2 form-select " aria-label="Default select example">
                 <option selected>---</option>
-                <option value="4-Queijos"></option>
-                <option value="">Two</option>
-                <option value="3">Three</option>
+                <option value="4-Queijos">4 Queijos</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="frango-catupiry">Frango Catupiry</option>
+                <option value="marguerita">Marguerita</option>
+                <option value="portuguesa">Portuguesa</option>
             </select>
+        </div>
+
+        <div class="p-2 col-xl-3 col-md-3 col-12 align-items-center">
+            <span class="mt-2"> * Quantidade: </span>
+            <input type="text" class="mt-2 form-control" aria-describedby="input-quantity" value="1">
+        </div>
+
+        <div class="p-2 col-xl-3 col-md-3 col-12">
+            <button type="button" class="mt-4 btn btn-block btn-primary w-100 btn-lg"> Adicionar </button>
         </div>
     </div>
 
-    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3">
-        <span class="input-group-text fw-bold col-12" id="basic-addon1 ">2 - Produtos do seu pedido!
+    <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3 ">
+        <span class="input-group-text fw-bold col-12" id="basic-addon1 "> 2 - Produtos do seu pedido!
         </span>
+        
+
+        <div class="container w-100 mx-auto mt-2 overflow-auto">
+
+        
+        <table class="table table-bordered overflow-auto" style="min-width: 1000px;">
+            <thead>
+                <tr class="table-secondary">
+                    <th scope="col" class="col-3">#</th>
+                    <th scope="col" class="col-4">Produto</th>
+                    <th scope="col" class="col-1">Qtd</th>
+                    <th scope="col" class="col-2">Preço Unit.</th>
+                    <th scope="col" class="col-2">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="img-fluid w-75" src="./img/pizza-4-queijos.jpg"
+                            alt="pizza-4-queijos"></td>
+                    <td>
+                        <div class="col">
+                            <span class="d-block">Pizza 4-Queijos</span>
+                            <button type="button" class="btn btn-block btn-danger">Remover</button>
+                        </div>
+                    </td>
+                    <td>1</td>
+                    <td>R$ 35,00</td>
+                    <td>R$ 35,00</td>
+                </tr>
+                <tr>
+                    <td><img class="img-fluid w-75" src="./img/pizza-marguerita.jpg"
+                            alt="pizza-marguerita"></td>
+                    <td>
+                        <div class="col">
+                            <span class="d-block">Pizza Marguerita</span>
+                            <button type="button" class="btn btn-block btn-danger">Remover</button>
+                        </div>
+                    </td>
+                    <td>2</td>
+                    <td>R$ 30,00</td>
+                    <td>R$ 60,00</td>
+                </tr>
+                <tr>
+                    <td><img class="img-fluid w-75" src="./img/pizza-calabresa.jpg"
+                            alt="pizza-calabresa"></td>
+                    <td>
+                        <div class="col">
+                            <span class="d-block">Pizza Calabresa</span>
+                            <button type="button" class="btn btn-block btn-danger">Remover</button>
+                        </div>
+                    </td>
+                    <td>1</td>
+                    <td>R$ 40,00</td>
+                    <td>R$ 40,00</td>
+                </tr>
+                <tr>
+                    <td><img class="img-fluid w-75" src="./img/pizza-frango-catupiry.jpg" alt="pizza-frango-catupiry"></td>
+                    <td>
+                        <div class="col">
+                            <span class="d-block">Pizza Frango Catupiry</span>
+                            <button type="button" class="btn btn-block btn-danger">Remover</button>
+                        </div>
+                    </td>
+                    <td>2</td>
+                    <td>R$ 40,00</td>
+                    <td>R$ 80,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="4" class="table-dark fw-bold"> <span class="align-self-end"> Total do Pedido: </span></td>
+                <td>R$215,00</td>
+            </tfoot>
+        </table>
+    </div>
     </div>
 
     <div class="input-group mb-3 p-3 col-12 border border-2 rounded-3 ">
